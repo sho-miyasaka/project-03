@@ -1,13 +1,13 @@
-PM,activity,times,per year
-Fumio_Kishida,haircut,41,23.56692913
-Shinzo_Abe,haircut,93,12.02870305
-Yoshihide_Suga,haircut,12,11.40625
-Fumio_Kishida,walking,0,0
-Shinzo_Abe,walking,16,2.069454288
-Yoshihide_Suga,walking,199,189.1536458
-Fumio_Kishida,golf,4,2.299212598
-Shinzo_Abe,golf,107,13.83947555
-Yoshihide_Suga,golf,1,0.950520833
-Fumio_Kishida,massage,9,5.173228346
-Shinzo_Abe,massage,1,0.129340893
-Yoshihide_Suga,massage,2,1.901041667
+PM,activity,times,per year,images
+Fumio_Kishida,golf,4,2.299212598,https://sho-miyasaka.github.io/project-03/images/kishida.jpg
+Yoshihide_Suga,golf,1,0.950520833,https://sho-miyasaka.github.io/project-03/images/suga.jpg
+Shinzo_Abe,golf,107,13.83947555,https://sho-miyasaka.github.io/project-03/images/abe.jpg
+Fumio_Kishida,haircut,41,23.56692913,https://sho-miyasaka.github.io/project-03/images/kishida.jpg
+Yoshihide_Suga,haircut,12,11.40625,https://sho-miyasaka.github.io/project-03/images/suga.jpg
+Shinzo_Abe,haircut,93,12.02870305,https://sho-miyasaka.github.io/project-03/images/abe.jpg
+Fumio_Kishida,massage,9,5.173228346,https://sho-miyasaka.github.io/project-03/images/kishida.jpg
+Yoshihide_Suga,massage,2,1.901041667,https://sho-miyasaka.github.io/project-03/images/suga.jpg
+Shinzo_Abe,massage,1,0.129340893,https://sho-miyasaka.github.io/project-03/images/abe.jpg
+Fumio_Kishida,walking,0,0,https://sho-miyasaka.github.io/project-03/images/kishida.jpg
+Yoshihide_Suga,walking,199,189.1536458,https://sho-miyasaka.github.io/project-03/images/suga.jpg
+Shinzo_Abe,walking,16,2.069454288,https://sho-miyasaka.github.io/project-03/images/abe.jpg

@@ -3,26 +3,19 @@
 ## About this project
 This is my submission as project 3 for [the Lede Program](https://ledeprogram.com) in 2023. The story webpage is here: [https://sho-miyasaka.github.io/project-03/](https://sho-miyasaka.github.io/project-03/)
 
-In this project, I focused on how many young people are in politics. Some of European countries’ leaders, for example, have taken office in their 30s. In contrast, Japan's youngest prime minister in history is Prime Minister Shinzo Abe, who took office at the age of 52. If we look at the Japanese Diet, there is not a single member in his or her 20s now.
+In this project, I attempted to examine the personal grooming habits of three Japanese Prime Ministers using text data from Japanese news articles. Major Japanese media have diligently recorded the activity logs of successive PMs for many years, making this information a valuable "source" for uncovering insights into the realities of these leaders. Being a PM is undoubtedly one of the busiest jobs, with schedules planned down to the minute, making health management and appearance crucial aspects of their responsibilities. I looked at how each prime minister refreshes himself.
 
-I thought I would compare data on how young people are in parliaments around the world. I also wanted to find out if the percentage of young parliamentarians varied by region and electoral system.
+The current PM, Fumio Kishida, took office in October 2021. According to the data analysis, he has been getting a haircut at an average frequency of about once every two weeks since taking office. This is twice the frequency of his predecessors, Shinzo Abe and Yoshihide Suga. In addition, he frequently visits a salon specializing in "British-style reflexology" as well as a hair salon.
 
 ## Data collection and analysis
-First, I collected data to show the situation in Japan. I scraped the list of members of the House of Representatives elected in the most recent 2021 general election. By comparing the data with UN population estimates, I show that there are few members of the House of Representatives in their 20s and 30s relative to the composition of the population.
+[The articles I used for this analysis](https://www.nikkei.com/theme/?dw=22041100) were from the Japanese newspaper Nikkei, which publishes details of the prime minister's activities on a daily basis, such as who he met, where, and at what time. I first attempted to scrape this data from the Nikkei website, then compiled and cleaned the text into a Pandas DataFrame that aggregated information for the three prime ministers over ten years.
 
-Data from the Inter-Parliamentary Union is useful for making comparisons between countries around the world. I downloaded several datasets in csv format, two types of data: age group data and a list of electoral systems. I merged them into a single Pandas dataframe and looked at the relationship between regions and electoral systems and the proportion of young legislators.
+With advice from my mentor, Simrann, I created column charts and heat maps to summarize the results.
 
 |Data I Collected|Source|
 |---|---|
-|Data on age by countries|[Inter-Parliamentary Union](https://data.ipu.org/age-brackets/)|
-|Parliamentary elections data|[Inter-Parliamentary Union](https://data.ipu.org/elections/)|
-|Population by age group|[United Nations World Population Prospects 2022](https://population.un.org/wpp/)|
-|Japan's 2021 general election results |[Ministry of Internal Affairs and Communications of Japan](https://www.soumu.go.jp/senkyo/senkyo_s/data/shugiin/index.html)|
-|List of Members, House of Representatives of Japan|[House of Representatives of Japan](https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm)|
-
-
-I tried several new tools.
-Using D3, I color-coded and visualized the age of the winners for the 2021 House of Representatives election results. It was the first time I used Flourish to create a graph. I also experimented with adding some elements as graphical annotations.
+|Articles on the Prime Minister's Activity Record|[Nikkei](https://www.nikkei.com/theme/?dw=22041100)|
 
 ## Things I would've liked to do:
-How to maintain diversity in parliaments is an important issue in many countries. Not only age groups, but also regional, ethnic, and gender perspectives are needed. This is not only a problem in Japan. Asian countries have fewer young members of parliament, and the U.S. also has fewer young members than Europe. I would like to use a larger data set for my analysis.
+I plan to apply the methods developed in this project to my future work. I focused on examining relatively readily available data on the personal care of prime ministers. However, I believe that this approach could be extended to study other aspects, such as the frequency of meetings with specific individuals or foreign visitation rates. 
+The Japanese text's lack of word spacing and variety of characters made text analysis more difficult than in English. Nevertheless, I recognize the significance of this project for my work, and I intend to use the knowledge gained from this project to explore various text data analyses in languages such as Japanese and Chinese.

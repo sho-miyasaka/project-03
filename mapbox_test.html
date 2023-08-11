@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Big Map Energy</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"> 
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+
+    <style>
+      body { margin: 0; padding: 0; }
+      #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <audio id="audio-player" controls style="display:none;">
+      <source src="subway.m4a" type="audio/mpeg">
+   </audio>
+
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoic2hvLW1peWEiLCJhIjoiY2xrNW1uaWoyMTU3bzNubzFlMzZuM2cyeiJ9.wN6mRKISwDQ_2Fc-30inhw';
+      const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/sho-miya/cll0zd6hz00ry01qgdkp42cbx', // style URL
+        center: [-73.9, 40.7], // starting position [lng, lat]
+        zoom: 11, // starting zoom
+      });
+
+      map.on('click',function(e){
+        map.setLayoutProperty('subwaysMB','visibility','none');
+        var audioPlayer = document.getElementById('audio-player');
+          audioPlayer.play();
+      });
+
+    </script>
+  </body>
+</html>

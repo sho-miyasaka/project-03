@@ -1,4 +1,4 @@
-# Japanese PM Kishida Prefers Refreshing at Chain Salons
+# Japanese PM Kishida Prefers Refreshing at a Chain Barber Shop
 
 ## About this project
 This is my submission as project 3 for [the Lede Program](https://ledeprogram.com) in 2023. The story webpage is here: [https://sho-miyasaka.github.io/project-03/](https://sho-miyasaka.github.io/project-03/)
